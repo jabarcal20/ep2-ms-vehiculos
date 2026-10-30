@@ -2,7 +2,9 @@
 FROM nginx:latest
 
 # Copiar nuestra página a la carpeta web de nginx
-COPY index.html /usr/share/nginx/html/index.html
+COPY ".taget/cl-matiivilla-vehiculos-0.0.1-SNAPSHOT" "app.jar"
 
 # Puerto que usa nginx
 EXPOSE 80
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
