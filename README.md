@@ -11,11 +11,13 @@ los cambios realizados en cada modificación del proyecto.
 
 - Utilizamos Trunk-Based Development, trabajando principalmente sobre
 la rama `main`.
+- Se creó un Dockerfile para contenerizar el microservicio
 
 ## 3. Integración Continua y Revisión
 
 - **GitHub Actions:** Cada vez que hacemos `git push`, se activa automáticamente el pipeline de CI para verificar que el proyecto siga compilando.
-                      Se agregó la IP, db username y db password como secretos de github
+                      
+- **Github Secrets:** Se agregó la IP, db username y db password como secretos de github para no dejarlos publicos
 
 ## 4. Declaración de asistencia con IA
 
