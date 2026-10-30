@@ -122,8 +122,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-            -Dsonar.projectKey=Guillermovillacuratorres_devsecops \
-            -Dsonar.organization=guillermovillacuratorres \
+            -Dsonar.projectKey=jabarcal20_ep2-ms-vehiculos \
+            -Dsonar.organization=jabarcal20 \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.token=${SONAR_TOKEN}
 
